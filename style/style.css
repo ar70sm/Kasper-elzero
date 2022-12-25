@@ -269,10 +269,11 @@ nav .search i {
 .service .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  row-gap: 70px;
+column-gap: 50px;
+margin-top: 70px;
 }
 .service .container > div {
-  margin-top: 70px;
-  margin-left: 40px;
   display: flex;
 }
 .service .container > div i {
@@ -301,6 +302,12 @@ nav .search i {
   .service .container > div div {
     text-align: center;
   }
+}
+@media (max-width: 575px){
+  .service .container {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 /* section after service */
